@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Questions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bar-key="bar3">
+  <header>
+    <h1 class="party-text">Bar 3 Trivia</h1>
+    <p>Enter the password to access the trivia.</p>
+  </header>
+  <main>
+    <form id="password-form">
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="trivia-section" class="hidden">
+      <form id="trivia-form">
+        <p>Question 1: [Insert question]</p>
+        <input type="text" id="q1" required>
+        
+        <p>Question 2: [Insert question]</p>
+        <input type="text" id="q2" required>
+        
+        <p>Question 3: [Insert question]</p>
+        <input type="text" id="q3" required>
+        
+        <button type="submit">Submit Answers</button>
+      </form>
+      <div id="clue-section" class="hidden">
+        <p>Congratulations! Here’s your next clue:</p>
+        <p id="clue"></p>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
