@@ -1,19 +1,22 @@
 const passwords = {
+    pregame: 'ashvin',
     bar1: 'ashvin',
-    bar2: 'is',
-    bar3: 'beautiful',
+    bar2: 'ashvin',
+    bar3: 'ashvin',
   };
   
   const triviaAnswers = {
-    bar1: ['hazel', 'pink', 'sushi'],
+    pregame: ['hazel', 'pink', 'sushi'],
+    bar1: ['one', 'pink panther', 'dans dispos'],
     bar2: ['answer4', 'answer5', 'answer6'],
     bar3: ['answer7', 'answer8', 'answer9'],
   };
   
   const clues = {
-    bar1: 'The next bar is where Ashvin goes for all his football needs',
-    bar2: 'Clue for Bar 3: [Insert clue]',
-    bar3: 'Final clue to Bar 4: [Insert clue]',
+    pregame: 'Clue for Bar 1',
+    bar1: 'Clue for Bar 2',
+    bar2: 'Clue for Bar 3',
+    bar3: 'Final clue to Bar 4',
   };
   
   document.getElementById('password-form')?.addEventListener('submit', function (e) {
@@ -27,7 +30,7 @@ const passwords = {
       document.getElementById('password-form').classList.add('hidden');
       document.getElementById('trivia-section').classList.remove('hidden');
     } else {
-      alert('Incorrect password. Try again.');
+      alert('Incorrect password. Please try again.');
     }
   });
   
@@ -41,13 +44,13 @@ const passwords = {
     ];
   
     const correctAnswers = triviaAnswers[barKey];
-    console.log(correctAnswers)
+    console.log("Correct answers:", correctAnswers)
     if (userAnswers.every((ans, i) => isCloseMatch(ans, correctAnswers[i]))) {
       document.getElementById('trivia-form').classList.add('hidden');
       document.getElementById('clue').textContent = clues[barKey];
       document.getElementById('clue-section').classList.remove('hidden');
     } else {
-      alert('Incorrect answers. Try again.');
+      alert('Sorry! You failed to answer my riddles. Please try again.');
     }
   });
 
