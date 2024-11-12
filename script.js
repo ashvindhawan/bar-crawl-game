@@ -1,15 +1,15 @@
 const passwords = {
     pregame: 'ashvin',
-    bar1: 'ashvin',
-    bar2: 'ashvin',
-    bar3: 'ashvin',
+    bar1: 'is',
+    bar2: 'very',
+    bar3: 'beautiful',
   };
   
   const triviaAnswers = {
-    pregame: ['hazel', 'pink', 'sushi'],
-    bar1: ['one', 'pink panther', 'dans dispos'],
-    bar2: ['answer4', 'answer5', 'answer6'],
-    bar3: ['answer7', 'answer8', 'answer9'],
+    pregame: ['pink', 'sigma kappa', 'taco bell', 'violin'],
+    bar1: ['san francisco', 'sushi', 'legislative aide', '1'],
+    bar2: ['basketball', 'pancake', 'two', 'carissa'],
+    bar3: ['cholula', 'mini cooper', 'dans.dispos', 'extraAnswer'],
   };
   
   const clues = {
@@ -41,11 +41,23 @@ const passwords = {
       document.getElementById('q1').value.trim().toLowerCase(),
       document.getElementById('q2').value.trim().toLowerCase(),
       document.getElementById('q3').value.trim().toLowerCase(),
+      document.getElementById('q4').value.trim().toLowerCase(), // Added fourth answer
     ];
   
     const correctAnswers = triviaAnswers[barKey];
     console.log("Correct answers:", correctAnswers)
-    if (userAnswers.every((ans, i) => isCloseMatch(ans, correctAnswers[i]))) {
+
+    var correctCount = userAnswers.filter((ans, i) => isCloseMatch(ans, correctAnswers[i])).length;
+
+    // If barKey is bar3, always count the last answer as correct
+    if (barKey === 'bar3') {
+      correctCount += 1; // Count the last answer as correct
+    }
+
+    console.log("# of Correct answers:", correctCount)
+
+    //if (userAnswers.every((ans, i) => isCloseMatch(ans, correctAnswers[i]))) {
+    if (correctCount>=3) {
       document.getElementById('trivia-form').classList.add('hidden');
       document.getElementById('clue').textContent = clues[barKey];
       document.getElementById('clue-section').classList.remove('hidden');
