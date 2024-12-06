@@ -1,8 +1,8 @@
 const passwords = {
-    pregame: 'ashvin',
-    bar1: 'is',
-    bar2: 'very',
-    bar3: 'beautiful',
+    pregame: 'anneka',
+    bar1: 'kelvin',
+    bar2: 'koa',
+    bar3: 'dominick',
   };
   
   const triviaAnswers = {
@@ -13,10 +13,10 @@ const passwords = {
   };
   
   const clues = {
-    pregame: 'Clue for Bar 1',
-    bar1: 'Clue for Bar 2',
-    bar2: 'Clue for Bar 3',
-    bar3: 'Final clue to Bar 4',
+    pregame: 'I’ll say this once, there’s no repeating, \n So listen close because your time is fleeting. \n If you’d like to be closer to completing, \n Go to where you’d hold a meeting. ',
+    bar1: 'This bar shares the name with an area of 1800s London that Charles Dickens called “The most deplorable manifestation of human wretchedness and depravity.',
+    bar2: 'Unscramble the words: eht vyaso ivotli',
+    bar3: 'Like a spring time version of a famous Michael Jackson song about unrequited love. \n Send Ashvin a picture when you get there to finish!',
   };
   
   document.getElementById('password-form')?.addEventListener('submit', function (e) {
