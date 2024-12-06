@@ -7,7 +7,7 @@
 /* Base Styles */
 body {
     font-family: 'Poiret One', cursive;
-    font-weight: 400;
+    font-weight: 1000;
     font-size: 1rem;  
     background-color: #FCEFF5; /* Soft, pastel pink background */
     color: #3b021b;  /* Dark grey for readability */
@@ -82,7 +82,7 @@ input:focus {
     font-size: 2.5rem;
     letter-spacing: 1px;
     text-transform: none;
-    /* Soft gradient from rose to dusty rose */
+    text-align: center;
     background:  #F06292;
     background-clip: text;
     -webkit-background-clip: text;
