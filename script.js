@@ -15,7 +15,7 @@ const passwords = {
   const clues = {
     pregame: 'I’ll say this once, there’s no repeating, \n So listen close because your time is fleeting. \n If you’d like to be closer to completing, \n Go to where you’d hold a meeting. ',
     bar1: 'This bar shares the name with an area of 1800s London that Charles Dickens called “The most deplorable manifestation of human wretchedness and depravity.',
-    bar2: 'Unscramble the words: eht vyaso ivotli',
+    bar2: 'To a jazz-filled past and a name of kings,Where laughter echoes and the swing band sings.Its name hints at castles and grand old tales,Find the spot where melody prevails.',
     bar3: 'Like a spring time version of a famous Michael Jackson song about unrequited love. \n Send Ashvin a picture when you get there to finish!',
   };
   
