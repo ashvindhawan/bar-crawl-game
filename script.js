@@ -7,8 +7,8 @@ const passwords = {
   
   const triviaAnswers = {
     pregame: ['pink', 'sigma kappa', 'taco bell', 'violin'],
-    bar1: ['san francisco', 'sushi', 'legislative aide', '1'],
-    bar2: ['basketball', 'pancake', '2', 'carissa'],
+    bar1: ['san francisco', 'sushi', 'legislative aide', 'one'],
+    bar2: ['basketball', 'pancake', 'two', 'carissa'],
     bar3: ['cholula', 'mini cooper', 'dans.dispos', 'extraAnswer'],
   };
   
