@@ -8,14 +8,14 @@ const passwords = {
   const triviaAnswers = {
     pregame: ['pink', 'sigma kappa', 'taco bell', 'violin'],
     bar1: ['san francisco', 'sushi', 'legislative aide', '1'],
-    bar2: ['basketball', 'pancake', 'two', 'carissa'],
+    bar2: ['basketball', 'pancake', '2', 'carissa'],
     bar3: ['cholula', 'mini cooper', 'dans.dispos', 'extraAnswer'],
   };
   
   const clues = {
     pregame: 'I’ll say this once, there’s no repeating, \n So listen close because your time is fleeting. \n If you’d like to be closer to completing, \n Go to where you’d hold a meeting. ',
     bar1: 'This bar shares the name with an area of 1800s London that Charles Dickens called “The most deplorable manifestation of human wretchedness and depravity.',
-    bar2: 'To a jazz-filled past and a name of kings,Where laughter echoes and the swing band sings.Its name hints at castles and grand old tales,Find the spot where melody prevails.',
+    bar2: 'To a jazz-filled past and a name of kings, \n Where laughter echoes and the swing band sings. \n  Its name hints at castles and grand old tales, \n Find the spot where melody prevails.',
     bar3: 'Like a spring time version of a famous Michael Jackson song about unrequited love. \n Send Ashvin a picture when you get there to finish!',
   };
   
