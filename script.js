@@ -81,6 +81,7 @@ const passwords = {
 });
   
   function isCloseMatch(input, correct) {
+    console.log("input: ", input, "correct:", correct, "distance:", levenshteinDistance(input, correct))
     return (
       input === correct ||
       levenshteinDistance(input, correct) <= 2
