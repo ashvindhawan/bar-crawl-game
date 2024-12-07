@@ -1,5 +1,5 @@
 const passwords = {
-    pregame: 'anneka',
+    pregame: 'ashvin',
     bar1: 'kelvin',
     bar2: 'koa',
     bar3: 'dominick',
